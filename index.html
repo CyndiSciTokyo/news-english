@@ -52,8 +52,8 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:
   border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:10px;
   padding-block:10px;margin-bottom:18px;flex-wrap:wrap}
 .top .ttl{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-right:auto}
-.pick{font-family:var(--mono);font-size:12.5px;background:var(--card);color:var(--ink);
-  border:1px solid var(--rule);border-radius:6px;padding:5px 8px}
+.pick{font-family:var(--sans);font-size:13px;background:var(--card);color:var(--ink);
+  border:1px solid var(--rule);border-radius:6px;padding:5px 8px;max-width:11em}
 .ico{font-family:var(--sans);font-size:13px;background:var(--card);color:var(--ink2);
   border:1px solid var(--rule);border-radius:6px;padding:5px 9px;cursor:pointer;line-height:1.2}
 .ico:hover{color:var(--ink);border-color:var(--ink3)}
@@ -62,6 +62,8 @@ button{font-family:inherit}
 
 /* 刊头 */
 .masthead{padding-block:6px 22px;border-bottom:2px solid var(--ink);margin-bottom:26px}
+.masthead .theme{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mark);background:var(--markbg);border-radius:4px;padding:3px 7px;display:inline-block;margin-bottom:10px}
 .masthead h1{font-family:var(--serif);font-size:clamp(26px,6.5vw,36px);line-height:1.18;font-weight:600;
   letter-spacing:-.015em;margin:0 0 8px;text-wrap:balance}
 .masthead .meta{font-family:var(--mono);font-size:11.5px;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em}
@@ -258,7 +260,7 @@ function render(d){
   const st=stars();
   const h=[];
 
-  h.push('<div class="masthead"><h1>'+esc(d.subtitle)+'</h1>'+
+  h.push('<div class="masthead">'+(d.theme?'<div class="theme">今日主题 · '+esc(d.theme)+'</div>':'')+'<h1>'+esc(d.subtitle)+'</h1>'+
     '<div class="meta">'+esc(d.date)+' · 五条速览 · 一篇精读 · '+d.vocab.length+' 个词 · '+d.patterns.length+' 组说法 · '+d.quiz.length+' 道小测</div></div>');
 
   /* 速览 */
@@ -445,10 +447,12 @@ async function boot(){
   let list=[];
   try{list=await fetch('lessons/manifest.json',{cache:'no-cache'}).then(r=>r.json())}catch(e){}
   if(!list.length){$('#app').innerHTML='<div class="masthead"><h1>还没有课程数据</h1><div class="meta">lessons/ 下没有找到内容</div></div>';return}
+  list=list.map(x=>typeof x==='string'?{d:x,t:x}:x);
+  const dates=list.map(o=>o.d);
   const sel=$('#pick');
-  sel.innerHTML=list.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
+  sel.innerHTML=list.map(o=>'<option value="'+o.d+'">'+esc(o.t||o.d)+'</option>').join('');
   const want=(location.hash||'').replace('#','');
-  const start=list.includes(want)?want:list[0];
+  const start=dates.includes(want)?want:dates[0];
   sel.value=start;
   const load=async d=>{stopAudio();
     const j=await fetch('lessons/'+d+'.json',{cache:'no-cache'}).then(r=>r.json());
