@@ -1,0 +1,448 @@
+<title>每日新闻英语</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 版式概念:一栏窄幅报纸。英文走衬线(Newsreader),中文与界面走无衬线,标签与数字走等宽。红色只给需要记的词,蓝色只给能点的东西。 */
+:root{
+  --paper:#FAF9F6; --card:#FFFFFF; --ink:#15171A; --ink2:#565C66; --ink3:#848B95;
+  --rule:#DCD8CF; --rule2:#EDEAE3;
+  --mark:#A8291D; --markbg:rgba(168,41,29,.10);
+  --link:#1A4F8A; --linkbg:rgba(26,79,138,.09);
+  --ok:#2C6B4F; --okbg:rgba(44,107,79,.11);
+  --bad:#A8291D; --badbg:rgba(168,41,29,.10);
+  --serif:"Newsreader",Georgia,"Songti SC",serif;
+  --sans:"Public Sans",-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#131519; --card:#1A1D22; --ink:#E9E7E2; --ink2:#A2A8B2; --ink3:#767D87;
+  --rule:#2C3037; --rule2:#23262C;
+  --mark:#E8796A; --markbg:rgba(232,121,106,.15);
+  --link:#82B4E8; --linkbg:rgba(130,180,232,.14);
+  --ok:#74C49B; --okbg:rgba(116,196,155,.15);
+  --bad:#E8796A; --badbg:rgba(232,121,106,.15);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#131519; --card:#1A1D22; --ink:#E9E7E2; --ink2:#A2A8B2; --ink3:#767D87;
+  --rule:#2C3037; --rule2:#23262C;
+  --mark:#E8796A; --markbg:rgba(232,121,106,.15);
+  --link:#82B4E8; --linkbg:rgba(130,180,232,.14);
+  --ok:#74C49B; --okbg:rgba(116,196,155,.15);
+  --bad:#E8796A; --badbg:rgba(232,121,106,.15);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;margin:0;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+
+/* 顶栏 */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:10px;
+  padding-block:10px;margin-bottom:18px;flex-wrap:wrap}
+.top .ttl{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-right:auto}
+.pick{font-family:var(--mono);font-size:12.5px;background:var(--card);color:var(--ink);
+  border:1px solid var(--rule);border-radius:6px;padding:5px 8px}
+.ico{font-family:var(--sans);font-size:13px;background:var(--card);color:var(--ink2);
+  border:1px solid var(--rule);border-radius:6px;padding:5px 9px;cursor:pointer;line-height:1.2}
+.ico:hover{color:var(--ink);border-color:var(--ink3)}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* 刊头 */
+.masthead{padding-block:6px 22px;border-bottom:2px solid var(--ink);margin-bottom:26px}
+.masthead h1{font-family:var(--serif);font-size:clamp(26px,6.5vw,36px);line-height:1.18;font-weight:600;
+  letter-spacing:-.015em;margin:0 0 8px;text-wrap:balance}
+.masthead .meta{font-family:var(--mono);font-size:11.5px;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em}
+
+/* 分区 */
+section{margin-block:34px}
+.sechead{display:flex;align-items:baseline;gap:10px;border-top:1px solid var(--ink);padding-top:9px;margin-bottom:16px}
+.sechead h2{font-family:var(--serif);font-size:20px;font-weight:600;margin:0;letter-spacing:-.01em}
+.sechead .n{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-left:auto;letter-spacing:.06em}
+.lead{color:var(--ink2);font-size:13.5px;margin:-6px 0 16px}
+
+/* 速览 */
+.brief{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding-block:15px;border-bottom:1px solid var(--rule2)}
+.brief:last-child{border-bottom:0}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);
+  padding-top:5px;white-space:nowrap}
+.brief .en{font-family:var(--serif);font-size:17.5px;line-height:1.55;grid-column:2}
+.brief .cn{color:var(--ink2);font-size:13.5px;grid-column:2;margin-top:3px}
+.brief .tag{grid-row:1/3}
+mark{background:var(--markbg);color:var(--mark);padding:.05em .18em;border-radius:3px;font-weight:500}
+.spk{background:none;border:0;color:var(--ink3);cursor:pointer;font-size:13px;padding:2px 5px;border-radius:5px;vertical-align:middle}
+.spk:hover{color:var(--link);background:var(--linkbg)}
+.spk.on{color:var(--link)}
+
+/* 精读 */
+.deep{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:20px 18px}
+.deep h3{font-family:var(--serif);font-size:21px;font-weight:600;margin:0 0 3px;line-height:1.3;text-wrap:balance}
+.deep .subcn{color:var(--ink3);font-size:13px;margin-bottom:14px}
+.para{font-family:var(--serif);font-size:17.5px;line-height:1.72}
+.s{cursor:pointer;border-radius:3px;transition:background .15s}
+.s:hover{background:var(--linkbg)}
+.s.playing{background:var(--markbg)}
+.trans{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule);color:var(--ink2);font-size:13.5px;line-height:1.75}
+.notes{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule2)}
+.note{display:grid;grid-template-columns:1fr;gap:2px;padding-block:9px;border-bottom:1px solid var(--rule2)}
+.note:last-child{border-bottom:0}
+.note b{font-family:var(--serif);font-size:15.5px;font-weight:500;color:var(--mark)}
+.note span{font-size:13px;color:var(--ink2)}
+
+/* 生词 */
+.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.vgrid{grid-template-columns:1fr}}
+.vc{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:9px;padding:13px 14px;cursor:pointer;min-width:0}
+.vc:hover{border-color:var(--ink3)}
+.vc .hd{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;padding-right:22px}
+.vc .w{font-family:var(--serif);font-size:18px;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.vc .ipa{font-family:var(--mono);font-size:11.5px;color:var(--ink3)}
+.vc .pos{font-family:var(--mono);font-size:10.5px;color:var(--ink3);border:1px solid var(--rule);border-radius:4px;padding:0 4px}
+.vc .star{position:absolute;top:10px;right:10px;background:none;border:0;cursor:pointer;color:var(--ink3);font-size:14px;padding:0 2px;line-height:1}
+.vc .star.on{color:var(--mark)}
+.vc .body{margin-top:9px;padding-top:9px;border-top:1px solid var(--rule2)}
+.vc .cn{font-size:14px;font-weight:500}
+.vc .ex{font-family:var(--serif);font-size:15px;margin-top:7px;line-height:1.5}
+.vc .excn{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.vc .tip{font-size:12.5px;color:var(--ink2);margin-top:8px;padding-top:7px;border-top:1px dashed var(--rule2)}
+.hintline{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:8px;letter-spacing:.04em}
+
+/* 地道说法 */
+.pat{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px 16px;margin-bottom:14px}
+.pat h3{font-family:var(--serif);font-size:18.5px;font-weight:600;margin:0 0 6px;line-height:1.35}
+.pat .intro{font-size:13.5px;color:var(--ink2);margin-bottom:13px}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:3px 14px;padding-block:10px;border-top:1px solid var(--rule2)}
+@media (max-width:560px){.prow{grid-template-columns:1fr}}
+.prow .ph{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--mark);min-width:0;overflow-wrap:anywhere}
+.prow .pm{font-size:12.5px;color:var(--ink2)}
+.prow .pe{font-family:var(--serif);font-size:15px;line-height:1.5;grid-column:2;grid-row:1/3;min-width:0}
+@media (max-width:560px){.prow .pe{grid-column:1;grid-row:auto;margin-top:5px;padding-top:6px;border-top:1px dashed var(--rule2)}}
+.drill{margin-top:14px;padding-top:13px;border-top:1px solid var(--rule)}
+.dq{font-size:14px;margin-bottom:8px}
+input[type=text],textarea{width:100%;font-family:var(--serif);font-size:15.5px;color:var(--ink);
+  background:var(--paper);border:1px solid var(--rule);border-radius:7px;padding:9px 11px;line-height:1.5}
+textarea{min-height:62px;resize:vertical}
+input[type=text]:focus,textarea:focus{border-color:var(--link);outline:none}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.btn{font-size:13px;padding:7px 13px;border-radius:7px;border:1px solid var(--rule);background:var(--card);
+  color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--ink3)}
+.btn.key{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.key:hover{opacity:.88}
+.ans{margin-top:10px;padding:11px 13px;border-radius:8px;background:var(--okbg);font-size:14px;line-height:1.6}
+.ans .a{font-family:var(--serif);font-size:16px;color:var(--ok);font-weight:500}
+.ans .why{font-size:12.5px;color:var(--ink2);margin-top:5px}
+
+/* 小测 */
+.q{background:var(--card);border:1px solid var(--rule);border-radius:9px;padding:15px 16px;margin-bottom:11px}
+.qn{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.07em;margin-bottom:6px}
+.qt{font-family:var(--serif);font-size:16.5px;line-height:1.55;margin-bottom:11px}
+.qt.cn{font-family:var(--sans);font-size:15px}
+.opts{display:grid;gap:7px}
+.opt{text-align:left;font-family:var(--serif);font-size:15.5px;padding:9px 12px;border-radius:7px;
+  border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer}
+.opt:hover{border-color:var(--ink3)}
+.opt.sel{border-color:var(--link);background:var(--linkbg)}
+.opt.right{border-color:var(--ok);background:var(--okbg);color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:var(--badbg);color:var(--bad)}
+.fills{display:flex;gap:8px;flex-wrap:wrap}
+.fills input{width:130px;font-family:var(--serif)}
+.score{font-family:var(--mono);font-size:13px;color:var(--ink2);padding:11px 13px;border:1px dashed var(--rule);
+  border-radius:8px;margin-top:4px}
+
+/* 收藏 */
+.stars{background:var(--card);border:1px solid var(--rule);border-radius:9px;padding:15px 16px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.chip{font-family:var(--serif);font-size:14.5px;border:1px solid var(--rule);border-radius:999px;padding:4px 11px;color:var(--ink)}
+.empty{color:var(--ink3);font-size:13.5px}
+
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);color:var(--ink3);font-size:12px;line-height:1.7}
+footer a{color:var(--link)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <span class="ttl">每日新闻英语</span>
+    <select class="pick" id="pick" aria-label="选择日期"></select>
+    <button class="ico" id="theme" title="切换深浅色">◐</button>
+  </div>
+  <div id="app"></div>
+  <footer>
+    <div>英文内容由本站根据当天公开披露的事实原创改写，用于语言学习；不转载任何报道原文。数字与日期如与原始披露有出入，以原始披露为准。</div>
+    <div style="margin-top:6px">朗读为合成语音。学习记录保存在本机浏览器里，换设备不会同步。</div>
+  </footer>
+</div>
+
+<script>
+const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>[...(r||document).querySelectorAll(s)];
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- 本地记录 ---------- */
+const LS={get(k,d){try{const v=localStorage.getItem('ne:'+k);return v?JSON.parse(v):d}catch(e){return d}},
+          set(k,v){try{localStorage.setItem('ne:'+k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- 主题 ---------- */
+const root=document.documentElement;
+const savedTheme=LS.get('theme',null);
+if(savedTheme)root.setAttribute('data-theme',savedTheme);
+$('#theme').onclick=()=>{
+  const cur=root.getAttribute('data-theme');
+  const dark=cur?cur==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  const next=dark?'light':'dark';
+  root.setAttribute('data-theme',next);LS.set('theme',next);
+};
+
+/* ---------- 朗读 ---------- */
+function akey(t){let x=2166136261;for(let i=0;i<t.length;i++){x=Math.imul(x^t.charCodeAt(i),16777619)>>>0}return x.toString(16).padStart(8,'0')}
+let cur=null,curBtn=null;
+function stopAudio(){if(cur){cur.pause();cur=null}if(curBtn){curBtn.classList.remove('on');curBtn=null}
+  $$('.s.playing').forEach(e=>e.classList.remove('playing'));
+  try{speechSynthesis.cancel()}catch(e){}}
+function tts(t,slow){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=slow?.82:.96;
+  const v=speechSynthesis.getVoices().find(v=>/en-US/.test(v.lang)&&/Natural|Online/.test(v.name))
+       ||speechSynthesis.getVoices().find(v=>/en-US/.test(v.lang));
+  if(v)u.voice=v;u.onend=()=>stopAudio();speechSynthesis.speak(u)}catch(e){}}
+function say(t,opt){
+  opt=opt||{};stopAudio();
+  if(opt.btn){curBtn=opt.btn;opt.btn.classList.add('on')}
+  if(opt.el)opt.el.classList.add('playing');
+  const a=new Audio('audio/'+akey(t)+'.mp3');
+  cur=a;
+  a.onended=()=>{stopAudio();opt.then&&opt.then()};
+  a.onerror=()=>{if(cur===a){cur=null;tts(t,opt.slow);opt.then&&setTimeout(opt.then,400)}};
+  a.play().catch(()=>{if(cur===a){cur=null;tts(t,opt.slow)}});
+}
+function spk(t,slow){return '<button class="spk" data-say="'+esc(t)+'"'+(slow?' data-slow="1"':'')+' aria-label="朗读">▶</button>'}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-say]');if(!b)return;
+  e.stopPropagation();
+  if(curBtn===b){stopAudio();return}
+  say(b.dataset.say,{btn:b,slow:!!b.dataset.slow});
+});
+
+/* ---------- 重点词高亮 ---------- */
+function markup(text,keys){
+  const spans=[];
+  (keys||[]).forEach(k=>k.split('...').map(s=>s.trim()).filter(Boolean).forEach(part=>{
+    const i=text.toLowerCase().indexOf(part.toLowerCase());
+    if(i<0)return;
+    if(spans.some(s=>i<s[1]&&i+part.length>s[0]))return;
+    spans.push([i,i+part.length]);
+  }));
+  spans.sort((a,b)=>a[0]-b[0]);
+  let out='',p=0;
+  spans.forEach(([a,b])=>{out+=esc(text.slice(p,a))+'<mark>'+esc(text.slice(a,b))+'</mark>';p=b});
+  return out+esc(text.slice(p));
+}
+
+/* ---------- 渲染 ---------- */
+let L=null,DATE='';
+const stars=()=>LS.get('stars',[]);
+
+function render(d){
+  L=d;DATE=d.date;
+  const st=stars();
+  const h=[];
+
+  h.push('<div class="masthead"><h1>'+esc(d.subtitle)+'</h1>'+
+    '<div class="meta">'+esc(d.date)+' · 五条速览 · 一篇精读 · '+d.vocab.length+' 个词 · '+d.patterns.length+' 组说法 · '+d.quiz.length+' 道小测</div></div>');
+
+  /* 速览 */
+  h.push('<section><div class="sechead"><h2>今日五条</h2><span class="n">SCAN</span></div>'+
+    '<div class="lead">先看英文，看不懂再看中文。红色的是今天要记的词。</div>');
+  d.briefs.forEach(b=>{
+    h.push('<div class="brief"><div class="tag">'+esc(b.tag)+'<br>'+esc(b.tagCn)+'</div>'+
+      '<div class="en">'+markup(b.en,b.keys)+' '+spk(b.en)+'</div>'+
+      '<div class="cn">'+esc(b.cn)+'</div></div>');
+  });
+  h.push('</section>');
+
+  /* 精读 */
+  const dp=d.deep;
+  h.push('<section><div class="sechead"><h2>精读一篇</h2><span class="n">READ</span></div>'+
+    '<div class="deep"><h3>'+esc(dp.title)+'</h3><div class="subcn">'+esc(dp.titleCn)+'</div>'+
+    '<div class="row" style="margin:0 0 12px"><button class="btn" id="playall">从头听一遍</button>'+
+    '<button class="btn" id="togcn">显示中文</button></div>'+
+    '<div class="para" id="para">'+dp.sentences.map((s,i)=>'<span class="s" data-i="'+i+'">'+esc(s.en)+'</span> ').join('')+'</div>'+
+    '<div class="trans" id="trans" hidden>'+dp.sentences.map(s=>esc(s.cn)).join('')+'</div>'+
+    '<div class="notes"><div class="hintline">句子点一下可以听。下面是这段里值得抄下来的写法。</div>'+
+    dp.notes.map(n=>'<div class="note"><b>'+esc(n[0])+'</b><span>'+esc(n[1])+'</span></div>').join('')+
+    '</div></div></section>');
+
+  /* 生词 */
+  h.push('<section><div class="sechead"><h2>今日生词</h2><span class="n">'+d.vocab.length+' WORDS</span></div>'+
+    '<div class="lead">先看英文想中文，点开卡片对答案。★ 收起来的词会留在页面最下面。</div><div class="vgrid">');
+  d.vocab.forEach((v,i)=>{
+    h.push('<div class="vc" data-v="'+i+'"><div class="hd"><span class="w">'+esc(v.w)+'</span>'+
+      '<span class="ipa">'+esc(v.ipa)+'</span><span class="pos">'+esc(v.pos)+'</span>'+
+      spk(v.w,1)+
+      '<button class="star'+(st.includes(v.w)?' on':'')+'" data-star="'+esc(v.w)+'" aria-label="收藏">★</button></div>'+
+      '<div class="body" hidden><div class="cn">'+esc(v.cn)+'</div>'+
+      '<div class="ex">'+esc(v.ex)+' '+spk(v.ex)+'</div>'+
+      '<div class="excn">'+esc(v.exCn)+'</div>'+
+      '<div class="tip">'+esc(v.tip)+'</div></div>'+
+      '<div class="hintline nohint">点一下看释义</div></div>');
+  });
+  h.push('</div></section>');
+
+  /* 地道说法 */
+  h.push('<section><div class="sechead"><h2>地道说法</h2><span class="n">WRITE</span></div>'+
+    '<div class="lead">这一节是今天的重点：同样的意思，新闻里习惯怎么说。</div>');
+  d.patterns.forEach((p,pi)=>{
+    h.push('<div class="pat"><h3>'+esc(p.title)+'</h3><div class="intro">'+esc(p.intro)+'</div>');
+    p.rows.forEach(r=>h.push('<div class="prow"><div class="ph">'+esc(r[0])+'</div><div class="pm">'+esc(r[1])+'</div>'+
+      '<div class="pe">'+esc(r[2])+' '+spk(r[2])+'</div></div>'));
+    h.push('<div class="drill"><div class="dq">'+esc(p.drill.q)+'</div>'+
+      '<input type="text" id="dr'+pi+'" placeholder="写下你的答案">'+
+      '<div class="row"><button class="btn key" data-drill="'+pi+'">对答案</button>'+
+      '<span class="hintline">'+esc(p.drill.hint)+'</span></div>'+
+      '<div class="ans" id="dra'+pi+'" hidden></div></div></div>');
+  });
+  h.push('</section>');
+
+  /* 小测 */
+  h.push('<section><div class="sechead"><h2>小测</h2><span class="n">CHECK</span></div>');
+  d.quiz.forEach((q,qi)=>{
+    h.push('<div class="q"><div class="qn">'+String(qi+1).padStart(2,'0')+'</div>');
+    if(q.t==='mc'){
+      h.push('<div class="qt">'+esc(q.q)+'</div><div class="opts">'+
+        q.opts.map((o,oi)=>'<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+esc(o)+'</button>').join('')+'</div>');
+    }else if(q.t==='fill'){
+      const parts=q.q.split('____');
+      let s='<div class="qt">';
+      parts.forEach((pp,pi2)=>{s+=esc(pp);if(pi2<parts.length-1)s+='<b style="color:var(--mark)">___</b>'});
+      s+='</div><div class="fills">'+q.a.map((_,ai)=>'<input type="text" id="f'+qi+'_'+ai+'" placeholder="'+(ai+1)+'">').join('')+'</div>'+
+        '<div class="row"><button class="btn key" data-fill="'+qi+'">对答案</button></div>';
+      h.push(s);
+    }else{
+      h.push('<div class="qt cn">'+esc(q.q)+'</div><textarea id="t'+qi+'" placeholder="写下你的译文"></textarea>'+
+        '<div class="row"><button class="btn key" data-tr="'+qi+'">看参考答案</button></div>');
+    }
+    h.push('<div class="ans" id="qa'+qi+'" hidden></div></div>');
+  });
+  h.push('<div class="score" id="score">选择题和填空题答完会在这里统计。</div></section>');
+
+  /* 收藏 */
+  h.push('<section><div class="sechead"><h2>我收起来的词</h2><span class="n">SAVED</span></div>'+
+    '<div class="stars"><div id="starbox"></div>'+
+    '<div class="row"><button class="btn" id="copyst">复制全部</button>'+
+    '<button class="btn" id="clrst">清空</button></div></div></section>');
+
+  $('#app').innerHTML=h.join('');
+  wire();
+  drawStars();
+}
+
+function drawStars(){
+  const st=stars(),b=$('#starbox');if(!b)return;
+  b.innerHTML=st.length?'<div class="chips">'+st.map(w=>'<span class="chip">'+esc(w)+'</span>').join('')+'</div>'
+    :'<div class="empty">还没有收起来的词。在上面的生词卡上点 ★ 就会出现在这里。</div>';
+}
+
+function wire(){
+  /* 精读 */
+  const dp=L.deep;
+  $('#togcn').onclick=e=>{const t=$('#trans');t.hidden=!t.hidden;e.target.textContent=t.hidden?'显示中文':'隐藏中文'};
+  $$('#para .s').forEach(el=>el.onclick=()=>{
+    if(el.classList.contains('playing')){stopAudio();return}
+    stopAudio();say(dp.sentences[+el.dataset.i].en,{el:el});
+  });
+  $('#playall').onclick=e=>{
+    if(e.target.dataset.on){stopAudio();e.target.dataset.on='';e.target.textContent='从头听一遍';return}
+    e.target.dataset.on='1';e.target.textContent='停';
+    let i=0;const step=()=>{
+      if(!$('#playall').dataset.on||i>=dp.sentences.length){stopAudio();const b=$('#playall');if(b){b.dataset.on='';b.textContent='从头听一遍'}return}
+      const el=$('#para .s[data-i="'+i+'"]');stopAudio();
+      say(dp.sentences[i].en,{el:el,then:()=>{i++;step()}});
+    };step();
+  };
+
+  /* 生词卡 */
+  $$('.vc').forEach(c=>c.onclick=e=>{
+    if(e.target.closest('[data-star]')||e.target.closest('[data-say]'))return;
+    const b=$('.body',c),hint=$('.nohint',c);
+    b.hidden=!b.hidden;hint.textContent=b.hidden?'点一下看释义':'再点一下收起';
+  });
+  $$('[data-star]').forEach(b=>b.onclick=()=>{
+    const w=b.dataset.star,st=stars(),i=st.indexOf(w);
+    if(i<0)st.push(w);else st.splice(i,1);
+    LS.set('stars',st);b.classList.toggle('on',i<0);drawStars();
+  });
+
+  /* 说法练习 */
+  $$('[data-drill]').forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.drill,d=L.patterns[i].drill,box=$('#dra'+i);
+    box.hidden=false;
+    box.innerHTML='<div class="a">'+esc(d.a)+' '+spk(d.a)+'</div>'+
+      '<div class="why">你写的：'+esc($('#dr'+i).value||'（没写）')+'</div>';
+  });
+
+  /* 小测 */
+  const ansd=LS.get('quiz:'+DATE,{});
+  $$('.opt').forEach(b=>b.onclick=()=>{
+    const qi=+b.dataset.q,oi=+b.dataset.o,q=L.quiz[qi];
+    if($('#qa'+qi).hidden===false)return;
+    $$('.opt[data-q="'+qi+'"]').forEach((o,i)=>{o.classList.add(i===q.a?'right':(i===oi?'wrong':''));o.disabled=true});
+    const box=$('#qa'+qi);box.hidden=false;
+    box.style.background=oi===q.a?'var(--okbg)':'var(--badbg)';
+    box.innerHTML='<div class="a" style="color:'+(oi===q.a?'var(--ok)':'var(--bad)')+'">'+(oi===q.a?'对':'正确答案：'+esc(q.opts[q.a]))+'</div>'+
+      '<div class="why">'+esc(q.why)+'</div>';
+    ansd[qi]=oi===q.a;LS.set('quiz:'+DATE,ansd);score(ansd);
+  });
+  $$('[data-fill]').forEach(b=>b.onclick=()=>{
+    const qi=+b.dataset.fill,q=L.quiz[qi];
+    const got=q.a.map((_,ai)=>($('#f'+qi+'_'+ai).value||'').trim().toLowerCase());
+    const ok=q.a.every((a,ai)=>got[ai]===a.toLowerCase());
+    const box=$('#qa'+qi);box.hidden=false;
+    box.style.background=ok?'var(--okbg)':'var(--badbg)';
+    box.innerHTML='<div class="a" style="color:'+(ok?'var(--ok)':'var(--bad)')+'">'+(ok?'对':'正确答案：'+esc(q.a.join(' / ')))+'</div>'+
+      '<div class="why">'+esc(q.why)+'</div>';
+    ansd[qi]=ok;LS.set('quiz:'+DATE,ansd);score(ansd);
+  });
+  $$('[data-tr]').forEach(b=>b.onclick=()=>{
+    const qi=+b.dataset.tr,q=L.quiz[qi],box=$('#qa'+qi);
+    box.hidden=false;box.style.background='var(--okbg)';
+    box.innerHTML='<div class="a">'+esc(q.a)+' '+spk(q.a)+'</div><div class="why">'+esc(q.why)+'</div>'+
+      '<div class="why">你写的：'+esc(($('#t'+qi).value||'（没写）'))+'</div>';
+  });
+  score(ansd);
+
+  $('#copyst').onclick=async e=>{
+    const st=stars();if(!st.length)return;
+    const txt=st.join('\n');
+    try{await navigator.clipboard.writeText(txt);e.target.textContent='已复制';setTimeout(()=>e.target.textContent='复制全部',1500)}
+    catch(err){const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');e.target.textContent='已复制'}catch(e2){e.target.textContent='复制失败，请手动选择'}
+      ta.remove();setTimeout(()=>e.target.textContent='复制全部',1800)}
+  };
+  $('#clrst').onclick=()=>{LS.set('stars',[]);$$('[data-star]').forEach(b=>b.classList.remove('on'));drawStars()};
+}
+
+function score(a){
+  const auto=L.quiz.map((q,i)=>q.t!=='tr'?i:-1).filter(i=>i>=0);
+  const done=auto.filter(i=>i in a),right=done.filter(i=>a[i]).length;
+  const el=$('#score');if(!el)return;
+  el.textContent=done.length?('已答 '+done.length+'/'+auto.length+' 题，对 '+right+' 题。'+(right===auto.length&&done.length===auto.length?'全对。':''))
+    :'选择题和填空题答完会在这里统计。';
+}
+
+/* ---------- 启动 ---------- */
+async function boot(){
+  let list=[];
+  try{list=await fetch('lessons/manifest.json',{cache:'no-cache'}).then(r=>r.json())}catch(e){}
+  if(!list.length){$('#app').innerHTML='<div class="masthead"><h1>还没有课程数据</h1><div class="meta">lessons/ 下没有找到内容</div></div>';return}
+  const sel=$('#pick');
+  sel.innerHTML=list.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
+  const want=(location.hash||'').replace('#','');
+  const start=list.includes(want)?want:list[0];
+  sel.value=start;
+  const load=async d=>{stopAudio();
+    const j=await fetch('lessons/'+d+'.json',{cache:'no-cache'}).then(r=>r.json());
+    render(j);scrollTo(0,0);location.hash=d;};
+  sel.onchange=()=>load(sel.value);
+  await load(start);
+}
+boot();
+</script>

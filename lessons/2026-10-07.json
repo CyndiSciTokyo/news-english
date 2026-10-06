@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-07",
+  "label": "10月7日",
+  "subtitle": "美股只靠科技股创新高 · 谷歌买下二十年核电",
+  "briefs": [
+    {
+      "tag": "Markets",
+      "tagCn": "市场",
+      "en": "Wall Street's main index closed at another record on Tuesday, but the gains came almost entirely from a handful of large technology names.",
+      "cn": "周二美股主要指数再创收盘新高,但涨幅几乎全部来自少数几家大型科技公司。",
+      "keys": ["record", "gains", "a handful of"]
+    },
+    {
+      "tag": "Deals",
+      "tagCn": "交易",
+      "en": "Google signed a twenty-year deal to buy 890 megawatts of nuclear power, paying for upgrades that will squeeze more electricity out of eleven reactors already running.",
+      "cn": "谷歌签了一份二十年协议,购买 890 兆瓦核电,并出资升级 11 座已在运行的反应堆,让它们多发一些电。",
+      "keys": ["signed", "upgrades", "squeeze ... out of"]
+    },
+    {
+      "tag": "Economy",
+      "tagCn": "宏观",
+      "en": "The American trade gap widened to roughly $106 billion in August, the widest in more than a year, as imports of chips and computers kept climbing.",
+      "cn": "美国 8 月贸易逆差扩大到约 1,060 亿美元,为一年多来最大,原因是芯片和电脑进口持续增加。",
+      "keys": ["trade gap", "widened", "imports"]
+    },
+    {
+      "tag": "Earnings",
+      "tagCn": "财报",
+      "en": "Penguin Solutions raised its revenue forecast for the coming year to about $2.4 billion, well above the $2.1 billion it had pencilled in earlier.",
+      "cn": "Penguin Solutions 把下一年的营收预期上调到约 24 亿美元,远高于此前暂定的 21 亿美元。",
+      "keys": ["raised", "forecast", "well above"]
+    },
+    {
+      "tag": "Europe",
+      "tagCn": "欧洲",
+      "en": "German factory orders fell 10.6% in August from the month before, though stripping out a few very large contracts leaves a decline of just 0.1%.",
+      "cn": "德国 8 月工厂订单比前一个月下降 10.6%,但剔除几笔超大额合同后,降幅只有 0.1%。",
+      "keys": ["fell", "stripping out", "decline"]
+    }
+  ],
+  "deep": {
+    "title": "A tech company buys twenty years of nuclear power",
+    "titleCn": "一家科技公司买下二十年核电",
+    "sentences": [
+      {
+        "en": "Google has agreed to buy nuclear power from Constellation Energy for the next twenty years, in one of the largest deals yet between a technology company and a power producer.",
+        "cn": "谷歌同意在未来二十年向 Constellation Energy 购买核电,这是科技公司与电力生产商之间迄今最大的交易之一。"
+      },
+      {
+        "en": "Under the agreement, Constellation will spend more than $4.3 billion upgrading eleven reactors in Illinois, Pennsylvania and New Jersey.",
+        "cn": "根据协议,Constellation 将投入超过 43 亿美元,升级位于伊利诺伊、宾夕法尼亚和新泽西的 11 座反应堆。"
+      },
+      {
+        "en": "The work will not build anything new.",
+        "cn": "这项工程不会新建任何东西。"
+      },
+      {
+        "en": "Instead it will raise the output of plants that are already running, adding about 890 megawatts to the grid, roughly what a new large reactor would supply.",
+        "cn": "它只是提高已经在运转的电厂的发电量,给电网增加约 890 兆瓦,差不多相当于一座新的大型反应堆的供应量。"
+      },
+      {
+        "en": "The first upgrade is due in 2028, and the rest should be finished by 2032 or 2033.",
+        "cn": "第一个升级项目预计 2028 年完成,其余应在 2032 或 2033 年前完工。"
+      },
+      {
+        "en": "Investors liked the news: shares in Constellation rose 12%, and other power producers climbed with it.",
+        "cn": "投资者认可这个消息:Constellation 股价上涨 12%,其他电力生产商也跟着上涨。"
+      },
+      {
+        "en": "Technology firms are competing for electricity because a single data center can use as much as a small city, and nuclear plants run around the clock.",
+        "cn": "科技公司正在抢电,因为一座数据中心的用电量可能抵得上一座小城市,而核电厂是昼夜不停运转的。"
+      }
+    ],
+    "notes": [
+      ["agree to buy ... for the next twenty years", "签下未来二十年的购买合同。注意 for the next + 时间段,表示从现在往后数。"],
+      ["one of the largest deals yet", "yet 放在最高级后面,意思是「到目前为止最大的之一」,比 so far 更简洁。"],
+      ["under the agreement", "「根据协议」。新闻里介绍合同条款时的固定开头,也可说 under the terms of the deal。"],
+      ["spend $4.3 billion upgrading ...", "spend + 金额 + doing,钱花在做某事上。不要写成 spend ... to upgrade。"],
+      ["raise the output of plants that are already running", "提高现有机组的产量。业内把这种做法叫 uprate,新闻正文里会直接用这个词。"],
+      ["roughly what a new large reactor would supply", "用 what 从句做比较基准,避免再写一遍 the amount of power that...。"],
+      ["climbed with it", "跟着一起涨。with it 指前面提到的那只股票,省掉重复。"],
+      ["run around the clock", "昼夜不停运转。around the clock 是地道说法,比 24 hours a day 更自然。"]
+    ]
+  },
+  "vocab": [
+    {"w": "record high", "ipa": "/ˈrekərd haɪ/", "pos": "n.", "cn": "历史最高点", "ex": "The index closed at a record high for the third time this month.", "exCn": "该指数本月第三次创收盘新高。", "tip": "同义说法 all-time high。动词搭配:hit / set / close at a record high。"},
+    {"w": "rally", "ipa": "/ˈræli/", "pos": "n. / v.", "cn": "一段持续上涨的行情;回升", "ex": "The rally lost steam after the central bank raised rates.", "exCn": "央行加息后,这波涨势失去了动力。", "tip": "本义是「集合」,引申为价格一起往上冲。反面是 selloff(一波抛售)。"},
+    {"w": "power-purchase agreement", "ipa": "/ˈpaʊər ˈpɜːrtʃəs/", "pos": "n.", "cn": "购电协议", "ex": "The two companies signed a twenty-year power-purchase agreement.", "exCn": "两家公司签了一份二十年购电协议。", "tip": "新闻里常缩写成 PPA。买电的长期合同,买方锁定价格,卖方锁定买家。"},
+    {"w": "output", "ipa": "/ˈaʊtpʊt/", "pos": "n.", "cn": "产量;发电量", "ex": "The upgrade will raise the plant's output by about a tenth.", "exCn": "这次升级会让该厂发电量提高约十分之一。", "tip": "重音在前。工厂讲 output,公司讲 production,经济体讲 GDP。"},
+    {"w": "grid", "ipa": "/ɡrɪd/", "pos": "n.", "cn": "电网", "ex": "The project adds 890 megawatts to the grid.", "exCn": "该项目给电网增加 890 兆瓦。", "tip": "原意是格子。送电线路织成网,所以叫 grid。off the grid = 不接电网、自给自足。"},
+    {"w": "guidance", "ipa": "/ˈɡaɪdns/", "pos": "n.", "cn": "公司自己给出的业绩预期", "ex": "The company raised its full-year guidance after a strong quarter.", "exCn": "在一个强劲的季度之后,公司上调了全年业绩预期。", "tip": "是公司对自己未来的预测,不是分析师的。上调 raise / lift,下调 cut / lower。"},
+    {"w": "consensus", "ipa": "/kənˈsensəs/", "pos": "n.", "cn": "分析师的平均预期", "ex": "Earnings came in above consensus for the fourth straight quarter.", "exCn": "利润连续第四个季度高于分析师平均预期。", "tip": "原意「共识」。come in above / below consensus 是报财报的标准说法。"},
+    {"w": "trade gap", "ipa": "/treɪd ɡæp/", "pos": "n.", "cn": "贸易逆差", "ex": "The trade gap widened for a third straight month.", "exCn": "贸易逆差连续第三个月扩大。", "tip": "等同 trade deficit,但 gap 更短、更常上标题。扩大 widen,收窄 narrow。"},
+    {"w": "seasonally adjusted", "ipa": "/ˈsiːzənəli əˈdʒʌstɪd/", "pos": "adj.", "cn": "经季节调整的", "ex": "The seasonally adjusted figure fell 0.4% in August.", "exCn": "经季节调整后的数字 8 月下降 0.4%。", "tip": "把每年都会重复的淡旺季影响去掉,这样月与月之间才能比。"},
+    {"w": "headwind", "ipa": "/ˈhedwɪnd/", "pos": "n.", "cn": "阻力、不利因素", "ex": "Higher borrowing costs are a headwind for manufacturers.", "exCn": "借钱成本上升对制造商是个阻力。", "tip": "逆风。反义 tailwind(顺风、助力)。注意是可数名词,前面要加 a。"},
+    {"w": "after-hours trading", "ipa": "/ˌæftər ˈaʊərz/", "pos": "n.", "cn": "盘后交易", "ex": "The stock rose 6% in after-hours trading.", "exCn": "该股在盘后交易中上涨 6%。", "tip": "收盘之后的那一段。开盘前的那段叫 premarket trading。"},
+    {"w": "strip out", "ipa": "/strɪp aʊt/", "pos": "v.", "cn": "剔除(某一项)后再看", "ex": "Strip out energy prices and inflation looks much milder.", "exCn": "把能源价格剔除后,通胀看上去温和得多。", "tip": "分析数据时的常用动作。同义 excluding / once you take out。"}
+  ],
+  "patterns": [
+    {
+      "title": "涨跌的强度,用不同的动词分档",
+      "intro": "中文一个「涨」字管到底,英文要按幅度挑动词。挑错了,读者对数字大小的预期就错了。",
+      "rows": [
+        ["edge up / edge down", "0.1–0.3%,几乎没动", "The index edged up 0.2% in quiet trading."],
+        ["rise / fall", "最中性,任何幅度都能用", "Orders fell 10.6% from the month before."],
+        ["climb / slip", "连续、缓慢的方向感", "Shares climbed for a fourth straight session."],
+        ["jump / drop", "明显的一下,通常 3% 以上", "The stock jumped 12% after the deal was announced."],
+        ["surge / tumble", "大幅,通常两位数", "Memory sales surged 111% from a year earlier."],
+        ["soar / plunge", "极端,用在罕见行情上", "Gas prices soared to their highest level since 2022."]
+      ],
+      "drill": {"q": "把这句译成英文:「该股在盘后交易中上涨 6%。」", "a": "The stock rose 6% in after-hours trading.", "hint": "6% 不算大也不算小,用最中性的 rose 就好。"}
+    },
+    {
+      "title": "业绩和预期,三组动词搭配",
+      "intro": "财报新闻几乎都在说同一件事:实际数字和事先的预期比,高了还是低了。记住这三组,一半的财报句子就能自己写。",
+      "rows": [
+        ["raise / lift / boost its guidance", "上调自己的业绩预期", "Penguin Solutions raised its revenue guidance to $2.43 billion."],
+        ["cut / lower / trim its guidance", "下调自己的业绩预期", "The carmaker cut its full-year guidance for the second time."],
+        ["beat / top / exceed expectations", "超过分析师的预期", "Adjusted earnings of $2.87 a share topped the $2.62 analysts had expected."],
+        ["miss expectations", "低于分析师的预期", "Revenue missed expectations by a wide margin."],
+        ["come in above / below consensus", "落在平均预期的上方/下方", "Sales came in slightly below consensus."]
+      ],
+      "drill": {"q": "填空:The company ____ its full-year revenue ____ to $2.4 billion, up ____ $2.1 billion.", "a": "raised / guidance / from", "hint": "上调 + 公司自己的预期 + 「从……上调到……」。"}
+    },
+    {
+      "title": "报一个经济数据,句子的骨架是固定的",
+      "intro": "指标 + 动词 + 幅度 + 时间范围 + 对比基准。五块按这个顺序排,写出来就是新闻腔。",
+      "rows": [
+        ["from the month before / from a month earlier", "和上个月比(环比)", "Factory orders fell 10.6% from the month before."],
+        ["from a year earlier", "和去年同期比(同比)", "Memory sales more than doubled from a year earlier."],
+        ["the highest since ...", "接在逗号后面补充背景", "The gap widened to $106 billion, the highest since March 2025."],
+        ["for a third straight month", "连续第几个月", "Orders have risen for a third straight month."],
+        ["compared with ...", "摆出对照的那个数", "Orders fell 10.6%, compared with a 3.2% rise in July."]
+      ],
+      "drill": {"q": "用这些要素造一句:贸易逆差 / 扩大到 1,060 亿美元 / 一年多来最大", "a": "The trade gap widened to $106 billion, the widest in more than a year.", "hint": "先把主干写完,背景信息用逗号接在后面。"}
+    }
+  ],
+  "quiz": [
+    {"t": "mc", "q": "The index closed at a record ____ on Tuesday.", "opts": ["high", "tall", "top", "up"], "a": 0, "why": "固定搭配 record high(历史最高点)。tall 说的是物体的高度,top 要说 record top 不地道。"},
+    {"t": "mc", "q": "Higher borrowing costs are a ____ for manufacturers.", "opts": ["tailwind", "headwind", "crosswind", "windfall"], "a": 1, "why": "headwind 是逆风、阻力。tailwind 是助力,windfall 是意外之财。"},
+    {"t": "mc", "q": "Adjusted earnings of $2.87 a share ____ the $2.62 analysts had expected.", "opts": ["missed", "topped", "climbed", "widened"], "a": 1, "why": "超过预期用 beat / top / exceed。climbed 不能直接带这种宾语。"},
+    {"t": "fill", "q": "Orders fell 10.6% ____ the month before, compared ____ a 3.2% rise in July.", "a": ["from", "with"], "why": "环比用 from the month before;摆对照数用 compared with。"},
+    {"t": "tr", "q": "把这句译成英文:「剔除几笔大额订单后,降幅只有 0.1%。」", "a": "Stripping out a few large orders, the decline was just 0.1%.", "why": "strip out 后面接被剔除的东西;「只有」用 just 或 only 都行。也可以写 Excluding a few large orders, ..."}
+  ]
+}
