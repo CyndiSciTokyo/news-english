@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-08",
+  "label": "10月8日",
+  "theme": "谁拖累了谁",
+  "subtitle": "债券收益率摸到二十四年高位 · 股市和房贷一起被拖下水",
+  "briefs": [
+    {
+      "tag": "Markets",
+      "tagCn": "市场",
+      "en": "American stocks slipped on Wednesday as government bond yields touched their highest level in twenty-four years before easing back.",
+      "cn": "周三美股小幅下跌,因为政府债券收益率一度摸到二十四年来最高,随后又回落。",
+      "keys": ["slipped", "as", "easing back"]
+    },
+    {
+      "tag": "Fed",
+      "tagCn": "美联储",
+      "en": "Minutes from the September meeting showed most Federal Reserve officials expect one more rate increase this year, though few see a reason to move in October.",
+      "cn": "9 月会议纪要显示,多数美联储官员预计年内还会再加息一次,但几乎没人认为 10 月就该动手。",
+      "keys": ["Minutes", "rate increase", "move"]
+    },
+    {
+      "tag": "Earnings",
+      "tagCn": "财报",
+      "en": "Samsung Electronics guided third-quarter operating profit to 107.4 trillion won, almost nine times the 12.17 trillion it earned a year earlier.",
+      "cn": "三星电子预告三季度营业利润 107.4 万亿韩元,接近去年同期 12.17 万亿的九倍。",
+      "keys": ["guided", "operating profit", "a year earlier"]
+    },
+    {
+      "tag": "Tech",
+      "tagCn": "科技",
+      "en": "SpaceX has discussed raising about $40 billion to buy Nvidia chips, and Oracle is said to be arranging similar financing with Apollo and Goldman Sachs.",
+      "cn": "SpaceX 讨论过筹集约 400 亿美元购买英伟达芯片;据称甲骨文也在与阿波罗、高盛安排类似的融资。",
+      "keys": ["raising", "is said to be", "arranging"]
+    },
+    {
+      "tag": "Housing",
+      "tagCn": "房市",
+      "en": "The knock-on reached housing: the average thirty-year mortgage rate sat at 7.52%, and a fund tracking homebuilders fell 2.6%.",
+      "cn": "连锁反应传到了房地产:30 年固定房贷平均利率停在 7.52%,追踪住宅建筑商的基金下跌 2.6%。",
+      "keys": ["knock-on", "sat at", "tracking"]
+    }
+  ],
+  "deep": {
+    "title": "One number moves, and everything else follows",
+    "titleCn": "一个数字动了,其他全跟着动",
+    "sentences": [
+      {
+        "en": "American government bond yields climbed on Wednesday to levels last seen two decades ago, and the shock worked its way through almost every other market.",
+        "cn": "周三美国政府债券收益率涨到了二十年未见的水平,这股冲击一层层传到了几乎所有其他市场。"
+      },
+      {
+        "en": "The yield on the ten-year note touched 5.361% during the session, a twenty-four-year high, before a well-subscribed auction pulled it back.",
+        "cn": "十年期国债收益率盘中摸到 5.361%,是二十四年来的高点,随后一场认购踊跃的标售把它拉了回来。"
+      },
+      {
+        "en": "Shares fell as investors did the arithmetic: when the government pays more to borrow, mortgages and corporate loans get more expensive too.",
+        "cn": "股票下跌,因为投资者算了一笔账:政府借钱的成本上去了,房贷和企业贷款也会跟着变贵。"
+      },
+      {
+        "en": "The average thirty-year mortgage rate stood at 7.52%, near a three-year high, and a fund that tracks homebuilders dropped 2.6%.",
+        "cn": "三十年期固定房贷平均利率停在 7.52%,接近三年高位,一只追踪住宅建筑商的基金下跌 2.6%。"
+      },
+      {
+        "en": "Smaller companies, which borrow on worse terms than large ones, fared worse still.",
+        "cn": "小公司借钱的条件本来就不如大公司,处境更差。"
+      },
+      {
+        "en": "The Russell 2000 fell 1.3% and now sits about 9% below its peak, close to what traders call correction territory.",
+        "cn": "罗素 2000 指数下跌 1.3%,目前比高点低约 9%,接近交易员所说的「回调区」。"
+      },
+      {
+        "en": "The dollar climbed as investors looked for somewhere safe, which in turn weighed on gold, down 1.1% to $4,113.80 an ounce.",
+        "cn": "美元走高,因为投资者在找安全的地方放钱;这反过来又压住了黄金,金价下跌 1.1% 至每盎司 4,113.80 美元。"
+      }
+    ],
+    "notes": [
+      ["work its way through ...", "一层层传过去。描述冲击从一个市场扩散到另一个市场,比 spread to 更有过程感。"],
+      ["levels last seen two decades ago", "二十年未见的水平。用 last seen 代替 the highest since,同一个意思换个说法。"],
+      ["touched 5.361% during the session", "盘中摸到。session 指当天的交易时段;touch 表示碰到就走,没有停住。"],
+      ["before a well-subscribed auction pulled it back", "随后被拉回来。before 在这里不是「在…之前」,而是叙述下一步发生了什么。"],
+      ["do the arithmetic", "算一笔账。比 realize 更形象,指市场自己推演后果。"],
+      ["fared worse still", "处境更糟。fare 指「境况如何」;worse still 加一层递进,比 even worse 更书面。"],
+      ["sits about 9% below its peak", "比高点低约 9%。用 sit 表示现在停在哪个位置,是个静态的说法。"],
+      ["which in turn weighed on gold", "这反过来又压住了黄金。in turn 专门用来接因果链条的下一环。"]
+    ]
+  },
+  "vocab": [
+    {"w": "yield", "ipa": "/jiːld/", "pos": "n.", "cn": "收益率", "ex": "The yield on the ten-year note rose to 5.276%.", "exCn": "十年期国债的收益率升到 5.276%。", "tip": "债券价格和收益率反着走:价格跌,收益率就涨。动词的 yield 是「产出、让步」,名词在金融里固定指收益率。"},
+    {"w": "Treasury", "ipa": "/ˈtreʒəri/", "pos": "n.", "cn": "美国国债", "ex": "Investors sold Treasurys and bought the dollar.", "exCn": "投资者卖出美国国债,买入美元。", "tip": "大写专指美国财政部发的债。注意拼写里是 -easu-,很多人会漏掉 a。复数在美国媒体写 Treasurys,不是 Treasuries。"},
+    {"w": "auction", "ipa": "/ˈɔːkʃn/", "pos": "n.", "cn": "(国债)标售", "ex": "Yields eased after a well-subscribed auction.", "exCn": "一场认购踊跃的标售之后,收益率回落。", "tip": "政府卖新债的拍卖。买的人踊跃叫 well-subscribed,冷清叫 weak / poorly received。"},
+    {"w": "borrowing costs", "ipa": "/ˈbɑːroʊɪŋ kɔːsts/", "pos": "n.", "cn": "借钱的成本", "ex": "Higher borrowing costs squeeze companies with heavy debt.", "exCn": "借钱成本上升会挤压负债重的公司。", "tip": "永远用复数。说利率对企业的影响时,比直接说 interest rates 更自然。"},
+    {"w": "weigh on", "ipa": "/weɪ ɑːn/", "pos": "v.", "cn": "拖累、压住", "ex": "A stronger dollar weighed on gold prices.", "exCn": "美元走强压住了金价。", "tip": "今天的核心词。表示持续往下压,不是一下子砸。过去式 weighed,别写成 weighted。"},
+    {"w": "spark", "ipa": "/spɑːrk/", "pos": "v.", "cn": "引发", "ex": "Volatility in yields sparked concerns about credit costs.", "exCn": "收益率的剧烈波动引发了对信贷成本的担忧。", "tip": "原意是火花。后面常接 concerns / fears / a rally / a selloff,强调一下子点着了。"},
+    {"w": "mortgage rate", "ipa": "/ˈmɔːrɡɪdʒ reɪt/", "pos": "n.", "cn": "房贷利率", "ex": "The average thirty-year mortgage rate sat at 7.52%.", "exCn": "三十年期固定房贷平均利率停在 7.52%。", "tip": "mortgage 里的 t 不发音,读作 MOR-gij。美国房贷默认是三十年固定。"},
+    {"w": "correction territory", "ipa": "/kəˈrekʃn ˈterətɔːri/", "pos": "n.", "cn": "回调区间", "ex": "The index is on the cusp of correction territory.", "exCn": "该指数正处在进入回调区间的边缘。", "tip": "市场约定:从高点跌超过 10% 叫 correction,跌超过 20% 叫 bear market。territory 在这里是「地界」的意思。"},
+    {"w": "safe haven", "ipa": "/seɪf ˈheɪvn/", "pos": "n.", "cn": "避险的去处", "ex": "The dollar drew safe-haven buying as stocks fell.", "exCn": "股市下跌时,美元吸引了避险买盘。", "tip": "haven 是港湾,不是 heaven。做定语时加连字符:safe-haven demand。"},
+    {"w": "in turn", "ipa": "/ɪn tɜːrn/", "pos": "adv.", "cn": "这反过来又", "ex": "The dollar rose, which in turn weighed on gold.", "exCn": "美元上涨,这反过来又压住了黄金。", "tip": "专门用来接因果链的下一环。放在主语和动词之间,前面常配 which。"},
+    {"w": "session", "ipa": "/ˈseʃn/", "pos": "n.", "cn": "当天的交易时段", "ex": "The yield touched 5.361% during the session.", "exCn": "该收益率在当天交易中摸到 5.361%。", "tip": "一个交易日叫 a session。连涨四天是 for a fourth straight session。"},
+    {"w": "ease", "ipa": "/iːz/", "pos": "v.", "cn": "(价格、利率)小幅回落", "ex": "Yields eased in the wake of the auction.", "exCn": "标售之后收益率有所回落。", "tip": "幅度小、语气轻,带点「松一口气」的意味。说央行放松政策也用它:ease policy。"}
+  ],
+  "patterns": [
+    {
+      "title": "谁拖累了谁,谁又推高了谁",
+      "intro": "今天整条新闻就是一串因果。中文一个「影响」能糊过去,英文必须挑出方向和力度。",
+      "rows": [
+        ["weigh on", "持续往下压,最常用", "A stronger dollar weighed on gold prices."],
+        ["drag on", "拖后腿,拖累整体", "Weak overseas demand dragged on third-quarter profit."],
+        ["erode", "一点点侵蚀,慢", "Rising rates are eroding the value of fast-growing tech stocks."],
+        ["dent", "打击一下,不致命", "The investigation dented confidence in farm-equipment makers."],
+        ["lift / boost", "往上抬", "A well-subscribed auction lifted bond prices."],
+        ["fuel", "给已有的势头添柴", "AI demand fueled a ninefold jump in memory profit."],
+        ["prop up", "勉强撑住", "A handful of tech names are propping up the index."]
+      ],
+      "drill": {"q": "把这句译成英文:「收益率上升拖累了住宅建筑商的股票。」", "a": "Rising yields weighed on homebuilder shares.", "hint": "持续的压力,不是一次性打击,所以用 weigh on。"}
+    },
+    {
+      "title": "把原因塞进一句话,靠这几个小词",
+      "intro": "英文新闻很少写 because。原因通常由一个介词或连词带出来,句子就不用断开。",
+      "rows": [
+        ["as", "同时发生,带因果味,最常用", "Stocks fell as Treasury yields tested multidecade highs."],
+        ["after", "先后次序清楚", "The stock soared after the company announced a financing deal."],
+        ["on", "后接名词,最短", "Shares rose on news of the deal."],
+        ["amid", "大环境、背景噪音", "France is issuing more short-term debt amid bond-market turmoil."],
+        ["in the wake of", "在…之后的余波里", "Yields eased in the wake of a strong auction."],
+        ["on the back of", "靠着…的推动", "Profit jumped on the back of surging AI demand."]
+      ],
+      "drill": {"q": "填空:Stocks fell ____ Treasury yields tested multidecade highs.", "a": "as", "hint": "两件事同时发生,而且前者是后者造成的。"}
+    },
+    {
+      "title": "说「多少年来最高」,有好几种换法",
+      "intro": "一篇稿子里同一个意思要换着说,不然读起来像复读机。这几种随便挑。",
+      "rows": [
+        ["hit a 24-year high", "最直接", "The ten-year yield hit a 24-year high of 5.361%."],
+        ["the highest since 2002", "点名那一年", "The thirty-year bond is near its highest level since 2002."],
+        ["levels last seen two decades ago", "绕一下,显得有年代感", "Yields climbed to levels last seen two decades ago."],
+        ["test multidecade highs", "逼近但还没破", "Treasury yields are testing multidecade highs."],
+        ["on the verge of", "就差一点", "The index is on the verge of correction territory."],
+        ["about 9% below its peak", "反过来从高点算", "The Russell 2000 sits about 9% below its peak."]
+      ],
+      "drill": {"q": "造一句:十年期收益率盘中摸到 5.361%,为二十四年来最高。", "a": "The ten-year yield touched 5.361% during the session, a 24-year high.", "hint": "主干写完,年数用逗号接在后面做补充。"}
+    }
+  ],
+  "quiz": [
+    {"t": "mc", "q": "Rising borrowing costs ____ on homebuilder shares.", "opts": ["lifted", "weighed", "sparked", "eased"], "a": 1, "why": "weigh on 是持续往下压。lift 是往上抬,spark 后面要接 concerns 这类名词,ease 不能接 on。"},
+    {"t": "mc", "q": "Stocks fell ____ Treasury yields tested multidecade highs.", "opts": ["as", "although", "despite", "unless"], "a": 0, "why": "as 既表示同时发生,又带因果。although 和 despite 是转折,意思刚好反了。"},
+    {"t": "mc", "q": "Profit jumped ____ the back of surging AI demand.", "opts": ["in", "on", "at", "by"], "a": 1, "why": "固定搭配 on the back of，靠着某股力量推上去。"},
+    {"t": "fill", "q": "The dollar climbed, which ____ turn ____ on gold.", "a": ["in", "weighed"], "why": "in turn 接因果链的下一环;weigh on 用过去式 weighed,不是 weighted。"},
+    {"t": "tr", "q": "把这句译成英文:「利率上升正在一点点侵蚀高成长科技股的估值。」", "a": "Rising rates are eroding the value of fast-growing tech stocks.", "why": "「一点点侵蚀」正好是 erode。进行时表示这件事还在发生。也可以写 are chipping away at the value of ..."}
+  ]
+}
