@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-12",
+  "label": "11月12日",
+  "theme": "话别说满",
+  "subtitle": "十二月加息几成定局 · 日元跌到两个月低点 · 全球增长押在一件事上",
+  "briefs": [
+    {
+      "tag": "Corporate",
+      "tagCn": "公司",
+      "en": "Nvidia's board is reportedly preparing to remove Jensen Huang as chief executive, after he acknowledged an affair with a woman US officials suspect worked for Beijing.",
+      "cn": "据报道,英伟达董事会正准备让黄仁勋卸任首席执行官;此前他承认与一名女子有婚外情,而美国官员怀疑该女子为北京方面工作。",
+      "keys": ["reportedly", "acknowledged", "suspect"]
+    },
+    {
+      "tag": "Economy",
+      "tagCn": "宏观",
+      "en": "American consumer prices rose 0.4% from September to October, about a tenth of a point above forecasts, making a December rate increase close to certain.",
+      "cn": "美国消费者价格 9 月到 10 月上涨 0.4%,比预测高约 0.1 个百分点,12 月加息几乎已成定局。",
+      "keys": ["above forecasts", "close to certain"]
+    },
+    {
+      "tag": "Currencies",
+      "tagCn": "汇率",
+      "en": "The yen slipped to 159.07 against the dollar, its weakest since early September, as traders priced in a faster pace of Fed increases.",
+      "cn": "日元兑美元跌到 159.07,为 9 月初以来最弱,因为交易员开始押注美联储加息的步子会更快。",
+      "keys": ["slipped", "priced in", "pace"]
+    },
+    {
+      "tag": "Deals",
+      "tagCn": "交易",
+      "en": "Pfizer signed a $1.5 billion agreement with Blackstone to help fund the development of a weight-loss drug.",
+      "cn": "辉瑞与黑石签了一份 15 亿美元的协议,用于资助一款减肥药的研发。",
+      "keys": ["signed", "fund", "development"]
+    },
+    {
+      "tag": "Tech",
+      "tagCn": "科技",
+      "en": "United Airlines is blocking AI bots from booking flights on its website, drawing a line between customers and the software acting for them.",
+      "cn": "联合航空开始阻止 AI 机器人在自家网站上订票,把顾客和替顾客跑腿的软件区分开来。",
+      "keys": ["blocking", "booking", "acting for"]
+    }
+  ],
+  "deep": {
+    "title": "A lot of growth resting on one line of spending",
+    "titleCn": "一大片增长,压在一项开支上",
+    "sentences": [
+      {
+        "en": "Much of the world's growth this year has leaned on one thing: American spending on data centers.",
+        "cn": "今年全球的增长,很大一部分靠着一件事撑住:美国在数据中心上的开支。"
+      },
+      {
+        "en": "Asian exporters have thrived selling chips and server racks, and assembly hubs from Vietnam to Mexico have been pulled along with them.",
+        "cn": "亚洲出口商靠卖芯片和服务器机架过得很好,从越南到墨西哥的组装基地也被一起带了起来。"
+      },
+      {
+        "en": "China's exports rose 35% in October from a year earlier, and South Korea's were up 93%.",
+        "cn": "中国 10 月出口同比增长 35%,韩国增长 93%。"
+      },
+      {
+        "en": "But economists now point out how narrow that base is: by one estimate, as much as 80% of recent export growth came from AI-related goods.",
+        "cn": "但经济学家现在指出,这个基础有多窄:据一种估算,近期出口增长中高达八成来自与 AI 相关的商品。"
+      },
+      {
+        "en": "Should American firms slow their spending, the effect would not stay inside the technology sector.",
+        "cn": "万一美国公司放慢开支,影响不会只停在科技行业里面。"
+      },
+      {
+        "en": "The dot-com bust offers a rough yardstick: American imports of IT equipment, measured against the size of the economy, fell 55% in the two years after mid-2000, and world growth slipped to about 2% in 2001.",
+        "cn": "互联网泡沫破裂提供了一把粗略的尺子:美国 IT 设备进口相对于经济体量,在 2000 年年中之后的两年里下降了 55%,2001 年全球增长滑到约 2%。"
+      },
+      {
+        "en": "Nobody is forecasting that outcome; the point is that there is little left to cushion it.",
+        "cn": "没有人在预测那样的结果;真正的问题是,现在几乎没有什么东西能缓冲它。"
+      }
+    ],
+    "notes": [
+      ["lean on one thing", "靠一件事撑着。比 depend on 更形象,有「把重量压上去」的意思。"],
+      ["have been pulled along with them", "被一起带了起来。写受益于别人的增长时很好用,不必说 benefit from。"],
+      ["point out how narrow that base is", "指出这个基础有多窄。how + 形容词 + 主语 + be,把评价塞进宾语从句。"],
+      ["by one estimate", "据一种估算。不说是谁估的,但承认这只是一家之言 —— 写论文里不确定的数字也可以这么处理。"],
+      ["as much as 80%", "高达八成。as much as 给的是上限,比直接写 80% 留了余地。"],
+      ["Should American firms slow their spending, ...", "万一……。把 if 去掉、should 提前,是条件句的正式写法,比 If American firms should... 干净。"],
+      ["offers a rough yardstick", "提供一把粗略的尺子。拿历史事件做参照时的标准说法,rough 先替自己打了折扣。"],
+      ["Nobody is forecasting that outcome; the point is that ...", "先否掉最极端的读法,再说真正想说的。这个转折能让论断显得克制而不是唱衰。"]
+    ]
+  },
+  "vocab": [
+    {"w": "reportedly", "ipa": "/rɪˈpɔːrtɪdli/", "pos": "adv.", "cn": "据报道", "ex": "The board is reportedly preparing to replace the chief executive.", "exCn": "据报道,董事会正准备换掉这位首席执行官。", "tip": "放在 be 动词之后、实义动词之前。用了它就等于说「这不是我核实的」,是最省事的免责词。"},
+    {"w": "allege", "ipa": "/əˈledʒ/", "pos": "v.", "cn": "指称(未经证实)", "ex": "Officials allege that the executive was recruited by a foreign government.", "exCn": "官员指称这名高管被某外国政府招募。", "tip": "专用于「有人这么说、但还没证实」的不当行为。形容词 alleged 放在名词前:the alleged scandal。读作 uh-LEJ。"},
+    {"w": "acknowledge", "ipa": "/əkˈnɑːlɪdʒ/", "pos": "v.", "cn": "(本人)承认", "ex": "He acknowledged the relationship but denied any wrongdoing.", "exCn": "他承认了这段关系,但否认有任何不当行为。", "tip": "和 allege 正好相反:allege 是别人说,acknowledge 是当事人自己认。比 admit 中性,不带「认罪」的味道。"},
+    {"w": "bust", "ipa": "/bʌst/", "pos": "n.", "cn": "(繁荣之后的)崩盘", "ex": "The global economy looks vulnerable to an AI bust.", "exCn": "全球经济看起来经不住一次 AI 崩盘。", "tip": "总是和 boom 配对出现:boom and bust(一荣一崩)。比 crash 更强调「泡沫吹起来之后破掉」。"},
+    {"w": "yardstick", "ipa": "/ˈjɑːrdstɪk/", "pos": "n.", "cn": "衡量用的尺子", "ex": "The dot-com bust offers a rough yardstick for what could follow.", "exCn": "互联网泡沫破裂为接下来可能发生的事提供了一把粗略的尺子。", "tip": "原意是一码长的木尺。拿历史或别的案例做参照时用,前面常加 rough 或 useful。"},
+    {"w": "lean on", "ipa": "/liːn ɑːn/", "pos": "v.", "cn": "靠着、依赖", "ex": "Global growth has leaned heavily on data-center spending.", "exCn": "全球增长在很大程度上靠数据中心的开支撑着。", "tip": "比 depend on 形象:身体往上靠,靠的东西一撤就倒。也有「施压」的意思,看语境。"},
+    {"w": "cushion", "ipa": "/ˈkʊʃn/", "pos": "v. / n.", "cn": "缓冲", "ex": "Governments have little room left to cushion a downturn.", "exCn": "政府几乎没有余地去缓冲一次下行。", "tip": "名词是垫子,动词是垫一下。常见搭配 cushion the blow(减轻冲击)。"},
+    {"w": "hawkish", "ipa": "/ˈhɔːkɪʃ/", "pos": "adj.", "cn": "主张把利率调高的", "ex": "A chorus of hawkish comments from officials lifted the dollar.", "exCn": "官员们一片主张加息的表态推高了美元。", "tip": "鹰派 = 优先压通胀、愿意加息;反面是 dovish(鸽派,优先保增长、倾向降息)。"},
+    {"w": "basis point", "ipa": "/ˈbeɪsɪs pɔɪnt/", "pos": "n.", "cn": "基点,万分之一", "ex": "The central bank raised rates by 25 basis points.", "exCn": "央行加息 25 个基点。", "tip": "一个基点 = 0.01 个百分点,100 个基点 = 1%。用它是为了避开「百分点涨了百分之几」这种歧义。口语缩写 bps,读作 bips。"},
+    {"w": "core inflation", "ipa": "/kɔːr ɪnˈfleɪʃn/", "pos": "n.", "cn": "核心通胀", "ex": "Core inflation, which strips out food and energy, rose 0.3%.", "exCn": "剔除食品和能源的核心通胀上涨 0.3%。", "tip": "把价格波动最大的食品和能源拿掉之后的通胀,用来看长期趋势。注意配单数动词。"},
+    {"w": "intervention", "ipa": "/ˌɪntərˈvenʃn/", "pos": "n.", "cn": "(官方)出手干预", "ex": "Repeated intervention has failed to turn the tide for the currency.", "exCn": "一再干预仍没能扭转这个货币的走势。", "tip": "汇市里特指政府或央行自己下场买卖本币。动词 intervene,重音在最后一节。"},
+    {"w": "spill over", "ipa": "/spɪl ˈoʊvər/", "pos": "v.", "cn": "外溢、波及到", "ex": "The jump in US yields spilled over into the Japanese bond market.", "exCn": "美国收益率的跳升波及到了日本债券市场。", "tip": "水满了溢出去。名词写成一个词:spillover effects(外溢效应)。"}
+  ],
+  "patterns": [
+    {
+      "title": "这消息哪来的,有几分实",
+      "intro": "今天的头条全是没坐实的事。英文新闻靠一组固定的词把「谁说的、证没证实」交代清楚 —— 用错一个,就从报道变成指控。",
+      "rows": [
+        ["reportedly", "据报道,不点来源,最轻", "The board is reportedly preparing to replace its chief executive."],
+        ["according to people familiar with the matter", "据知情人士,匿名来源的标准写法", "The talks are at an early stage, according to people familiar with the matter."],
+        ["alleged / allegedly", "被指称的,涉及不当行为且未证实", "The alleged scandal has unsettled the company's investors."],
+        ["suspected", "被怀疑是某种身份,还没定性", "She is a suspected agent of a foreign government."],
+        ["acknowledged", "当事人自己承认了,这部分算坐实", "He acknowledged the relationship in a note to employees."],
+        ["declined to comment", "拒绝置评,表示你去问过了", "Both companies declined to comment on the report."]
+      ],
+      "drill": {"q": "把这句译成英文:「据报道,董事会正准备换掉这位首席执行官。」", "a": "The board is reportedly preparing to replace the chief executive.", "hint": "reportedly 放在 is 后面、动词前面。"}
+    },
+    {
+      "title": "这事到底几成把握",
+      "intro": "从「几乎板上钉钉」到「不太可能」,英文有一整排刻度。挑准了,读者就知道你有多大把握。",
+      "rows": [
+        ["is a near certainty / close to certain", "九成以上,就差官宣", "A December rate increase is now close to certain."],
+        ["stands poised to", "万事俱备,随时动手", "The central bank stands poised to raise rates again next month."],
+        ["is likely to", "多半会,但留了口子", "A quick return to the 2% target is unlikely."],
+        ["could / may", "可能,不表态有多大可能", "Stronger inflation could warrant a faster pace of increases."],
+        ["risks + doing", "有变成某种局面的风险", "Global trade risks becoming hostage to a single industry."],
+        ["looks overdone", "市场反应过头了", "Talk of a half-point move looks overdone."]
+      ],
+      "drill": {"q": "填空:A December increase is now a near ____, and the Fed stands ____ to move again early next year.", "a": "certainty / poised", "hint": "第一个是名词「确定的事」,第二个和 stands 搭配表示蓄势待发。"}
+    },
+    {
+      "title": "把断言往回收一点",
+      "intro": "这一组对写论文一样有用:同样的结论,换个动词就从「我断定」变成「证据指向」。",
+      "rows": [
+        ["appear / seem to", "看上去是这样", "Investors appear to think the selloff has gone too far."],
+        ["suggest", "数据或迹象「说明」,不等于证明", "The rebound suggests many investors see the selloff as overdone."],
+        ["point to", "指向某个方向", "Global data point to the boom still going strong."],
+        ["look vulnerable to", "看起来经不住", "The global economy looks vulnerable to an AI bust."],
+        ["Should X ..., ...", "万一……,倒装条件句,比 if 正式", "Should the boom collapse, little could be done to prevent a recession."],
+        ["by one estimate / as much as", "据一种估算 / 高达,给上限不写死", "By one estimate, as much as 80% of the growth came from one sector."]
+      ],
+      "drill": {"q": "造一句:据一种估算,近期出口增长中高达八成来自 AI 相关商品。", "a": "By one estimate, as much as 80% of recent export growth came from AI-related goods.", "hint": "两个留余地的说法叠在一起:by one estimate 管来源,as much as 管上限。"}
+    }
+  ],
+  "quiz": [
+    {"t": "mc", "q": "He ____ the relationship in a note to employees, which settles at least that part of the story.", "opts": ["alleged", "acknowledged", "suspected", "reported"], "a": 1, "why": "当事人自己认的用 acknowledge。allege 是别人指称且未证实,suspect 是怀疑,reported 是第三方报道。"},
+    {"t": "mc", "q": "____ the boom collapse, little could be done to prevent a recession.", "opts": ["If", "Should", "Unless", "Whether"], "a": 1, "why": "Should 提到句首就是「万一」,后面不再加 if。Unless 意思相反,Whether 不能带条件。"},
+    {"t": "mc", "q": "Talk of a half-point move looks ____.", "opts": ["overtaken", "overdone", "overturned", "overheard"], "a": 1, "why": "overdone 是「做过头了」,说市场反应过度的标准词。另外三个分别是被超过、被推翻、被偷听到。"},
+    {"t": "fill", "q": "A December increase is now a near ____, and the Fed stands ____ to move again early next year.", "a": ["certainty", "poised"], "why": "a near certainty 是名词短语「几乎确定的事」;stand poised to 表示蓄势待发,poised 不要写成 posed。"},
+    {"t": "tr", "q": "把这句译成英文:「据一种估算,近期出口增长中高达八成来自与 AI 相关的商品。」", "a": "By one estimate, as much as 80% of recent export growth came from AI-related goods.", "why": "两个留余地的说法叠用:by one estimate 交代这只是一家之言,as much as 表示这是上限。也可以写 Up to 80% of ... by one estimate."}
+  ]
+}
